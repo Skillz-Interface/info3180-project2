@@ -9,7 +9,7 @@ TOKEN_SECRET = 'AnonymousTou'
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "change this to be a more random key"
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://skillz:skillz@localhost/photogram"
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://aizknwhytalaeg:c38d34261334567a0407f6d6402b01dff99c0bda6ac01495514f0577d2a2b037@ec2-23-23-142-5.compute-1.amazonaws.com:5432/dd4jcmvh77bd7f'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # added just to suppress a warning
 bcrypt = Bcrypt(app)
 db = SQLAlchemy(app)
